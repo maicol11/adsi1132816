@@ -1,0 +1,17 @@
+html {
+	background: -webkit-linear-gradient(top, #800080, yellow);
+	height: 100%;
+}
+body {
+	font: 4em tahoma;
+	text-align: center;
+}
+h1 {
+	text-shadow: 2px 2px 20px red;
+	color: orange;
+	margin: 50px auto;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+h1:hover {
+	-webkit-transform: translateY(20px);
+}
