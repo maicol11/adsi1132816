@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dormulario</title>
+  </head>
+  <body>
+    <div class="encabezado"> 
+      <h1>Registro Civil</h1>
+      <pr>A continuacion debera llenar unos datos para poder el paso siguiente hacia la confrontacion de su situacion final(nacimineto,defuncion,matrionio entre otros.)</pr>
+      <pr></pr>
+      <pr></pr>
+      <pr></pr>
+      <form method="post"></form>
+      <fieldset>
+        <legend>Datos </legend>
+        <!--Nombres------------>
+        <label for="nombres">Nombres</label>
+        <input type="text" id="nombres"><br><br>
+        <!--Genero------------------>
+        <label for="genero">Genero</label>
+        <select>
+          <option>Seleccione...</option>
+          <option value="F">Femenino</option>
+          <option value="M">Masculino</option>
+        </select><br><br>
+        <!--Contraseña-------------->
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña"><br><br>
+        <!--Nacionalidad-->
+        <labbel>Nacionalidad</labbel><br><br>
+        <label>Colombia
+          <input type="radio" name="nacionalidad" value="Colombia">
+          <label>Venezuela
+            <input type="radio" name="nacionalidad" value="Venezuela">
+          </label>
+          <label>Ecuador
+            <input type="radio" name="nacionalidad" value="Ecuador"><br><br><br><br>
+          </label>
+        </label>
+      </fieldset>
+      <h2>llene sus datos personales:</h2>
+      <div class="contenido">
+        <form method="post"></form>
+        <fieldset>
+          <legend>Profesion/Deporte/Dedicacion/Situacion          </legend>
+          <!--Profesion------------------>
+          <label for="profesion">profesion
+            <select multiple="multiple" id="profesion">
+              <option value="1">Ingeniero en sistemas</option>
+              <option value="2">Ingeniero Civil</option>
+              <option value="3">Programador</option>
+              <option value="4">Profesor</option>
+            </select><br><br><br>
+          </label>
+          <!--Descripcion----------------- -->
+          <label for="dedicacion">Dedicacion:
+            <textarea id="dedicacion" cols="40" rows="6"></textarea><br><br>
+          </label>
+          <!--Genero------------------>
+          <label for="situacion">Situación laboral
+            <select>
+              <option>Seleccione...</option>
+              <option value="d">desempleado</option>
+              <option value="e">empleado</option>
+            </select><br><br><br>
+          </label>
+          <!--Genero------------------>
+          <label for="estado civil">estado civil
+            <select>
+              <option>Seleccione...</option>
+              <option value="s">soltero</option>
+              <option value="c">casado</option>
+            </select><br><br>
+          </label>
+          <!--Botones-->
+          <label for="estado civil">Suba su foto (fondo blanco o azul) 
+            <input type="submit" value="Enviar Fotos">
+            <input type="reset" value="Reiniciar Datos"><br><br>
+          </label>
+        </fieldset>
+      </div>
+    </div>
+  </body>
+</html>
