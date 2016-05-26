@@ -1,0 +1,43 @@
+doctype
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Document
+  body
+    //- Declaracion
+    mixin list
+      ul
+        li Paquetes con juegos
+        li Paquetes con fragancias
+        li Paquetes con ropa
+    //- Uso
+    +list
+    +list
+    mixin pet(Lucas)
+      li.pet= Lucas
+    ul
+      +pet('El Gato lucas')
+      +pet('Mi perro simon')
+      +pet('El marrano de daniel')
+    mixin article(title)
+      .article
+        .article-wrapper
+          h1= title
+          if block
+            block
+          else
+            p No content provided
+    +article('Buenos dias crack!')
+
+       +article('Real Madrid')
+          p El Real Madrid es considerado el peor equipo del siglo con jugadores sin rendimiento con cristiano ronaldo al mando
+          p Este concepto fue basado en echos reales.                   
+    mixin link(href, name)
+      //- attributes == {class: "btn"}
+      a(class!=attributes.class, href=href)= name
+
+    +link('/Paquetes con juegos', 'Paquetes con juegos')(class="btn") 
+    | &nbsp | &nbsp
+    +link('/Paquetes con fragancias', 'Paquetes con fragancias')(class="btn")
+    | &nbsp | &nbsp
+    +link('/Paquetes con ropa', 'Paquetes con ropa')(class="btn") 
