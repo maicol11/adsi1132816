@@ -1,0 +1,14 @@
+doctype
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Casos
+  body
+    -for (var i = 1; i <= 5; i++)
+    li Empresa #{i}
+    |&nbsp
+    -
+      list = ["EA", "Ubi", "RockStar", "2k", "SEGA"]
+    each item in list
+      li= item
+  

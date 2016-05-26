@@ -1,0 +1,36 @@
+doctype
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Tablas
+    style(rel="stylesheet").
+      table {
+        border:2px solid #111;
+        border-collapse: collapse;
+        margin: 20px auto;
+        }
+      table td {
+        background-color: #7401DF;
+        border: 2px solid #DF01D7;
+        color: #58FAF4;
+        front: 16px Tahoma;
+        padding: 20px;
+        text-align: center;       
+        }     
+  body
+    table(border=1)
+      tr
+       td(colspan=5) Asignacion de juegos
+      tr
+        td(rowspan=3) Cantidad
+        td Juegos 1
+        td Juegos 2
+        td Juegos 3
+        td(rowspan=2) Cantidad
+      tr
+        td(colspan=3) Juegos de ps4
+      tr
+        td EA GAMES
+        td UBISFOT
+        td ROCKSTARGAMES
+        td 2K

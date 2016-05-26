@@ -1,0 +1,17 @@
+doctype
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Condicionales
+  body    
+    h1 Condicionales
+    - var edad = 20
+    - var genero = 'F'
+    //Condicional if(Si)
+    // if= pregunta
+    if edad < 18
+      h2 Usted es menor de edad
+    else
+      h2 Usted es mayor de edad
+      if genero == 'f'
+      h2 y no puede prestar servicio
