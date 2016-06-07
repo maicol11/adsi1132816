@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+}
+body section {
+  display: inline-block;
+}
+body div {
+  margin: 0px auto;
+}
+.margin {
+  background-color: #00f;
+  margin: 20px auto;
+  height: 400px;
+  width: 600px;
+}
+.border {
+  background-color: #ffa500;
+  margin: 0 auto;
+  margin: 18px auto;
+  height: 300px;
+  width: 500px;
+}
+.padding {
+  background-color: #800080;
+  margin: 0 auto;
+  margin: 16px auto;
+  height: 200px;
+  width: 400px;
+}
+.content {
+  background-color: #fff;
+  margin: 0 auto;
+  margin: 40px auto;
+  height: 100px;
+  width: 300px;
+}

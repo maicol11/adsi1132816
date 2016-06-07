@@ -1,0 +1,17 @@
+/*Selectores Hijos*/
+article > p {
+  color: #808080;
+  font-family: Arial;
+}
+/**Selectores adyacentes*/
+a + p {
+  color: #dc143c;
+}
+/*Selector de Atributos*/
+a[class=link] {
+  color: #dc143c;
+  text-decoration: overline;
+}
+p + a {
+  color: #808080;
+}

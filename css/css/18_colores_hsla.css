@@ -1,0 +1,24 @@
+body {
+  font: 10px Tahoma;
+}
+section {
+  background: url("../imgs/Woodland.jpg") no-repeat center center/cover;
+  margin: 10px auto;
+  padding: 10px;
+  width: 600px;
+  height: 500px;
+}
+h2 {
+  font-size: 2em;
+  color: rgba(255,255,255,0.4);
+  font-size: 4em;
+}
+h2 span {
+  color: rgba(0,0,0,0.6);
+}
+p {
+  background-color: rgba(0,0,0,0.6);
+  color: rgba(255,255,255,0.8);
+  padding: 20px;
+  text-align: justify;
+}
