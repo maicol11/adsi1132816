@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+section {
+  background-color: #ccc;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  margin: 100px 25px 20px 500px;
+}
+div.contenido {
+  border: 2px dotted #2e18f0;
+  height: 100px;
+  width: 150px;
+  margin: 100px;
+  background-color: #fff;
+}
