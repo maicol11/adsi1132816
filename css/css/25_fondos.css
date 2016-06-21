@@ -1,40 +1,99 @@
-div {
-  width: 250px;
-  height: 250px;
-}
-div#box1 {
-  background-color: #08f;
-}
-/*Imagen de fondo*/
-div#box2 {
-  background-image: url("../imgs/golden.jpg");
-}
-/*Repeticion imagen de fondo*/
-div#box3 {
-  background-image: url("../imgs/golden2.jpg");
-}
-div.box {
-  display: inline-block;
-  background-color: #f00;
-  margin-left: 40px;
-  border: 2px solid #000;
-  background-image: url("../imgs/golden2.jpg");
-}
-div.box span {
+body {
   background-color: #000;
-  display: block;
-  padding: 10px;
+  font: 16px Tahoma;
   color: #fff;
 }
-div#box3-1 {
+h2 {
+  background-color: #3e3e3e;
+  padding: 20px;
+}
+section {
+  background-color: rgba(200,4,57,0.5);
+  height: 500px;
+  padding: 20px;
+}
+section div {
+  display: inline-block;
+  height: 500px;
+  margin-left: 4px;
+  width: 400px;
+}
+.fondocolor .fondo1 {
+  background-color: #e5ff00;
+}
+.fondocolor .fondo2 {
+  background-color: #0012ff;
+}
+.fondocolor .fondo3 {
+  background-color: #f00;
+}
+.imagenfondo .fondo1 {
+  background-image: url("../imgs/hitman2.jpg");
+}
+.imagenfondo .fondo2 {
+  background-image: url("../imgs/hitman3.jpg");
+}
+.imagenfondo .fondo3 {
+  background-image: url("../imgs/hitman.jpg");
+}
+.repetirfondo div {
+  background-color: rgba(200,4,57,0.5);
+  background-image: url("../imgs/porfin.jpg");
+  color: #6f324c;
+  width: 298px;
+  margin-left: 10px;
+}
+.repetirfondo .fondo1 {
   background-repeat: repeat;
 }
-div#box3-2 {
+.repetirfondo .fondo2 {
   background-repeat: no-repeat;
 }
-div#box3-3 {
+.repetirfondo .fondo3 {
   background-repeat: repeat-x;
 }
-div#box3-4 {
+.repetirfondo .fondo4 {
   background-repeat: repeat-y;
+}
+.comportamientofondo div {
+  color: #fff;
+  background-image: url("../imgs/hitman.jpg");
+  overflow: scroll;
+}
+.comportamientofondo .fondo1 {
+  background-attachment: scroll;
+}
+.posicionfondo {
+  height: 1600px;
+}
+.posicionfondo div {
+  background-image: url("../imgs/porfin.jpg");
+  background-repeat: no-repeat;
+}
+.posicionfondo .fondo1 {
+  background-position: center left;
+}
+.posicionfondo .fondo2 {
+  background-position: center center;
+}
+.posicionfondo .fondo3 {
+  background-position: center right;
+}
+.posicionfondo .fondo4 {
+  background-position: top left;
+}
+.posicionfondo .fondo5 {
+  background-position: top center;
+}
+.posicionfondo .fondo6 {
+  background-position: top right;
+}
+.posicionfondo .fondo7 {
+  background-position: bottom left;
+}
+.posicionfondo .fondo8 {
+  background-position: bottom center;
+}
+.posicionfondo .fondo9 {
+  background-position: bottom right;
 }
