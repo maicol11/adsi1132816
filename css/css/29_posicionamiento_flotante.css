@@ -1,0 +1,42 @@
+body {
+  color: #777;
+  font: 16px Arial;
+}
+section.padre {
+  border: 2px solid #ccc;
+  height: 300px;
+  padding: 10px;
+  width: 300px;
+}
+section.padre div {
+  border: 2px solid #ccc;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 120px;
+}
+section .hija5 {
+  float: right;
+  background-color: rgba(45,100,80,0.5);
+}
+section.imagen {
+  border: 2px solid #ccc;
+  height: 400px;
+  padding: 10px;
+  width: 500px;
+}
+section img {
+  float: left;
+  margin-right: 20px;
+}
+section.imagen1 {
+  border: 2px solid #ccc;
+  height: 490px;
+  padding: 10px;
+  width: 500px;
+  float: left;
+}
+section.imagen1 p.limpiar {
+  clear: left;
+}

@@ -1,0 +1,25 @@
+section {
+  border: 2px solid #000;
+  display: inline-block;
+  height: 400px;
+  width: 200px;
+  vertical-align: top;
+}
+main {
+  text-align: center;
+}
+h4 {
+  background-color: #ccc;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+section.box1 {
+  overflow: visible;
+}
+section.box2 {
+  overflow: hidden;
+}
+section.box3 {
+  overflow: scroll;
+}
