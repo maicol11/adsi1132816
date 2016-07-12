@@ -1,0 +1,39 @@
+body {
+  background-color: #00faff;
+  text-align: center;
+  background-color: #000;
+}
+section {
+  display: inline-block;
+  background-color: #fff;
+  vertical-align: top;
+  width: 250px;
+  padding: 10px;
+}
+section.padre {
+  background-color: #fff;
+  height: 300px;
+  width: 870px;
+}
+section.line {
+  line-height: 1.2em;
+  border: 2px solid;
+}
+section.uno {
+  line-height: 1.5em;
+  border: 2px solid;
+}
+section.dos {
+  line-height: 2em;
+  border: 2px solid;
+}
+hr {
+  border: 2px solid;
+  text-align: center;
+}
+p {
+  color: #f00;
+}
+h1 {
+  color: #f00;
+}

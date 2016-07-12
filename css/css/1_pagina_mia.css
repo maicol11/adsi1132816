@@ -1,0 +1,28 @@
+body {
+  font: 14px Arial;
+  text-align: center;
+  background-image: url("../imgs/mando.jpg");
+  webkit-background-size: cover;
+  moz-background-size: cover;
+  o-background-size: cover;
+  background-size: cover;
+}
+hr {
+  background-color: #00f;
+  height: 1px;
+}
+nav div {
+  border: 2px solid #00f;
+  height: 20px;
+  width: 120px;
+  display: inline-block;
+  margin: 0px auto;
+  text-align: center;
+  margin-left: 30px;
+  background-color: #000;
+  color: #fff;
+}
+audio {
+  margin-bottom: -35em;
+  background-color: #00f;
+}

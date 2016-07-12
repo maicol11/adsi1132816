@@ -1,0 +1,21 @@
+body {
+  font-familia: Arial;
+  text-align: center;
+  background-color: rgba(90,48,50,0.5);
+}
+p.normal {
+  font-style: normal;
+  color: #942bcc;
+}
+p.italic {
+  font-style: italic;
+  color: rgba(90,48,50,0.5);
+}
+p.oblique {
+  font-style: oblique;
+  color: #00f5ff;
+}
+hr {
+  background-color: #808080;
+  border: 2px solid;
+}

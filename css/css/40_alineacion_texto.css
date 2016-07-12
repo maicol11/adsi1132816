@@ -1,0 +1,35 @@
+body {
+  background-color: #00faff;
+  text-align: center;
+}
+section {
+  border: 2px solid #00f;
+  display: inline-block;
+  width: 250px;
+  height: 200px;
+  padding: 10px;
+}
+section.left {
+  text-align: left;
+}
+section.right {
+  text-align: right;
+}
+section.center {
+  text-align: center;
+}
+section.justify {
+  text-align: justify;
+}
+hr {
+  border: 2px solid #00f;
+}
+h5 {
+  text-align: center;
+}
+p {
+  color: #f00;
+}
+h1 {
+  color: #f00;
+}
