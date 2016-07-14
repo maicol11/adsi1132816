@@ -1,0 +1,25 @@
+body {
+  font: 16px Arial;
+  text-align: center;
+  background-color: #00fff0;
+}
+section {
+  border: 2px solid #000;
+  display: inline-block;
+  padding: 4px;
+  vertical-align: top;
+  width: 200px;
+  background-color: rgba(20,100,20,0.5);
+}
+.box1 {
+  letter-spacing: 0;
+}
+.box2 {
+  letter-spacing: 0.5em;
+}
+.box3 {
+  letter-spacing: 1em;
+}
+hr {
+  border: 2px solid;
+}

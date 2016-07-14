@@ -1,0 +1,87 @@
+body {
+  background-color: #00ff34;
+  color: #fff;
+  font: 16px Arial;
+}
+section {
+  background-color: #00ffb2;
+  border: 10px solid #00f5ff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 800px;
+}
+/*Pseudo Clase para enlaces*/
+nav a:link {
+  background-color: #1cb9bf;
+  color: #e6e6af;
+  display: inline-block;
+  padding: 20px 1px;
+  text-align: center;
+  width: 190px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #00fff0;
+  border: 4px solid #e6e6af;
+  color: #6f7f39;
+}
+nav a:active {
+  background-color: #1cb9bf;
+  border: 4px solid #6d00ff;
+  color: #fff;
+}
+/*Pseudo Clase para elemento de formulario*/
+::-webkit-input-placeholder {
+  color: #fff;
+}
+input {
+  background-color: #1cb9bf;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  display: block;
+  outline: none;
+  padding: 20px;
+  width: 96%;
+}
+input:focus {
+  background-color: #00fff0;
+}
+/*Insertar Contenido Antes-Despues*/
+div.box.after,
+div.box.before {
+  content: '';
+  position: absolute;
+}
+div.box {
+  background-color: #00ff34;
+  height: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+div.box::after {
+  background-color: #0d0e0d;
+  height: 100px;
+  top: 0px;
+  left: 100px;
+  width: 100px;
+}
+div.box::before {
+  background-color: #0400a3;
+  height: 100px;
+  width: 100px;
+  top: 100px;
+  left: 0px;
+  width: 100px;
+}
+/*Primera Letra -Primera Linea*/
+p::first-letter {
+  color: #f00;
+  font-weight: bolder;
+  font-size: 4em;
+}
+p::first-line {
+  color: #000;
+}
