@@ -1,0 +1,54 @@
+body {
+  background-color: rgba(200,200,150,0.5);
+}
+section#sprite {
+  background: transparent url("../imgs/transformacion.png") no-repeat;
+  height: 80px;
+  margin: 20px auto;
+  width: 44px;
+}
+section#sprite.transformacion {
+  background-position: 0px 0px;
+}
+section#sprite.transformacion2 {
+  background-position: -40px 0px;
+}
+section#sprite.transformacion3 {
+  background-position: -84px 0px;
+}
+section#sprite.transformacion4 {
+  background-position: -124px 0px;
+}
+section#sprite.transformacion5 {
+  background-position: -169px 0px;
+}
+section#sprite.transformacion6 {
+  background-position: -215px 0px;
+}
+section#sprite.transformacion7 {
+  background-position: -315px 0px;
+}
+section#sprite.transformacion8 {
+  background-position: 0px -79px;
+}
+section#sprite.transformacion9 {
+  background-position: -84px -79px;
+}
+section#sprite.transformacion10 {
+  background-position: -185px -79px;
+}
+section#sprite.transformacion11 {
+  background-position: -230px -79px;
+}
+section#sprite.transformacion12 {
+  background-position: -327px -79px;
+}
+section#sprite.transformacion13 {
+  background-position: 0px -160px;
+}
+section#sprite.transformacion14 {
+  background-position: -40px -160px;
+}
+section#sprite.transformacion15 {
+  background-position: -138px -160px;
+}
