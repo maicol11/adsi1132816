@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Selectores CSS</title>
+	<link rel="stylesheet" href="css/01_selectores.css">
+</head>
+<body>
+	<h1>Nuevos Selectores CSS</h1>
+	<hr>
+	<!-- ..................... (p~ul ) ..................... -->
+	<!-- ~ = Virguliña -->
+	<fieldset>
+		<legend>
+			<h2>p~ul</h2>
+		</legend>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		</p>
+		<ul>
+			<li>Lorem Ipsum 1</li>
+			<li>Lorem Ipsum 2</li>
+			<li>Lorem Ipsum 3</li>
+		</ul>
+		<ul>
+			<li>Consectetur Adipisicing 1</li>
+			<li>Consectetur Adipisicing 2</li>
+			<li>Consectetur Adipisicing 3</li>
+		</ul>
+	</fieldset>
+	<!-- ..................... (a [href^="https"] ) ..................... -->
+	<fieldset>
+		<legend>
+			<h2>a[href^="https"]</h2>
+		</legend>
+		<a href="https://www.google.com">Ir a Google</a>
+		<a href="http://www.yahoo.com">Ir a Yahoo</a>
+		<a href="http://www.web.whatsaap.com">Ir a Whatsapp</a>
+		<a href="http://www.facebook.com">Ir a Facebook</a>
+	</fieldset>
+		<fieldset>
+		<legend>
+			<h2>a[src$=".pdf"]</h2>
+		</legend>
+		<a href="http://www.yahoo.com">Ir a Yahoo</a>
+		<a href="http://www.web.whatsaap.com">Ir a Whatsapp</a>
+		<a href="https://www.dropbox.com/home/ofac?preview=css3.pdf">Ir a PDF</a>
+		<a href="http://www.facebook.com">Ir a Facebook</a>
+
+	</fieldset>
+	<fieldset>
+		<legend>
+			<h2>a[src*="google"]</h2>
+		</legend>
+		<a href="http://www.yahoo.com">Ir a Yahoo</a>
+		<a href="http://www.web.whatsaap.com">Ir a Whatsapp</a>
+		<a href="http://www.facebook.com">Ir a Facebook</a>
+		<a href="http://www.google.com">Ir a Google</a>
+	</fieldset>
+	<fieldset class="primero">
+		<legend>
+			<h2>p:first-of-type</h2>
+		</legend>
+		<p>Esta linea se afecta </p>
+		<p>Esta linea no se afecta</p>
+	</fieldset>
+	<fieldset class="segundo">
+		<legend>
+			<h2>p:last-of-type</h2>
+		</legend>
+		<p>Esta linea no se afecta</p>
+		<p>Esta linea se afecta</p>
+	</fieldset>
+	<fieldset class="tercero">
+		<legend>
+			<h2>p:only-of-type</h2>
+		</legend>
+		<p>Esta linea se afecta</p>	
+	</fieldset>
+	<fieldset class="cuatro">
+		<legend>
+			<h2>p:only-child</h2>
+		</legend>
+		<div>
+			<p>Este es el hijo</p>
+		</div>
+	</fieldset>
+	<fieldset class="quinto">
+		<legend>
+			<h2>p:nth-child(2)</h2>
+		</legend>
+		<div>
+			<p>Este es el hijo</p>
+			<p>Este es otro hijo</p>
+			<p>Este es el hermano</p>
+		</div>	
+	</fieldset>
+	<fieldset class="sexto">
+		<legend>
+			<h2>p:nth-last-child(2)</h2>
+		</legend>
+		<div>
+			<p>Este es el hijo</p>
+			<p>Este es otro hijo</p>
+			<p>Este es el hermano</p>
+			<p>Este es el cuarto hijo</p>
+		</div>	
+	</fieldset>
+	<fieldset class="siete">
+		<legend>
+			<h2>p:nth-of-type(2)</h2>
+		</legend>
+		<div>
+			<p>Este es el hijo</p>
+			<p>Este es otro hijo</p>
+			<p>Este es hijo</p>
+			<p>Hermano de todos</p>
+		</div>	
+	</fieldset>
+	<fieldset class="ocho">
+		<legend>
+			<h2>p:nth-of-last-type(3)</h2>
+		</legend>
+		<div>
+			<p>Este es el hijo</p>
+			<p>Este es otro hijo</p>
+			<p>Este es hijo</p>
+			<p>Hermano de todos</p>
+			<p>Otro hijo</p>
+		</div>	
+	</fieldset>
+	<fieldset class="nueve">
+		<legend>
+			<h2>p:last-child</h2>
+		</legend>
+		<div>
+			<p>Este es el hijo</p>
+			<p>Este es otro hijo</p>
+			<p>Este es hijo</p>
+			<p>Hermano de todos</p>
+			<p>Otro hijo</p>
+		</div>
+	</fieldset>	
+	<fieldset class="once">
+		<legend>
+			<h2>p:empty</h2>
+		</legend>
+		<p></p>
+		<p>Este no se subraya</p>
+		<p>Este tampoco</p>
+	</fieldset>
+	<fieldset class="doce">
+		<legend>
+			<h2>#destino:target</h2>
+		</legend>
+		<a href="#destino1">Destino 1</a>
+		<a href="#destino2">Destino 2</a>
+		<a href="#destino3">Destino 3</a>
+		<section>
+			<p id="destino1">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+			<p id="destino2">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+			<p id="destino3">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+		</section>
+	</fieldset>
+	<fieldset class="trece">
+		<legend>
+			<h2>input:enabled</h2>
+		</legend>
+		<input type="text" placeholder="Email" >
+	</fieldset>
+	<fieldset class="catorce">
+		<legend>
+			<h2>input:disabled</h2>
+		</legend>
+		<input type="text" placeholder="Nombre" disabled="" >
+	</fieldset>
+	<fieldset class="quince">
+		<legend>
+			<h2>input:checked</h2>
+		</legend>
+		<label >
+			<input type="checkbox" name "Equipo">Chelsea F.C
+		</label>
+		<br>
+		<label >
+			<input type="checkbox" name "Equipo">Barcelona F.C
+		</label>
+		<br>
+		<label >
+			<input type="checkbox" name "Equipo">Bayern munich
+		</label>
+	</fieldset>
+	<fieldset class="dieciseis">
+		<legend>
+			<h2>:not(p)</h2>
+		</legend>
+		<p>Esto no se selecciona</p>
+		<div>Esto si se selecciona</div>
+		<p>Esto es un parrafo (No se selecciona)</p>
+	</fieldset>
+</body>
+</html>

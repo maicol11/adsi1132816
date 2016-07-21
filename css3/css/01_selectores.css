@@ -1,0 +1,110 @@
+html {
+  font-size: 63.5%;
+}
+body {
+  background-color: #ab3361;
+  font: 1.6rem Arial;
+}
+fieldset {
+  border: none;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 800px;
+}
+fieldset legend {
+  background-color: #ed4786;
+  color: #fff;
+  padding: 10px 20px;
+}
+fieldset legend h2 {
+  margin: 0px;
+  padding: 0px;
+}
+p~ul,
+a[href^="https"],
+a[href$=".pdf"],
+a[href*="google"] {
+  background-color: #e5ffc7;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.primero p:first-of-type {
+  background-color: #e5ffc7;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.segundo p:last-of-type {
+  background-color: #82e213;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.tercero p:only-of-type {
+  background-color: #13e270;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.cuatro p:only-child {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.quinto p:nth-child(2) {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.sexto p:nth-last-child(2) {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.siete p:nth-of-type(2) {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.ocho p:nth-last-of-type(2) {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.nueve p:last-child {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.once p:empty {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.doce #destino1:target,
+fieldset.doce #destino2:target,
+fieldset.doce #destino3:target {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.trece input:enabled {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.catorce input:disabled {
+  background-color: #f00;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+fieldset.quince input:checked {
+  background-color: #6ef503;
+}
+fieldset.dieciseis :not(p) {
+  background-color: #6ef503;
+  border: 2px solid #acc62b;
+  color: #70811a;
+}
+::selection {
+  background-color: #000;
+  color: #acc62b;
+}
