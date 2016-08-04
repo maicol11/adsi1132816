@@ -1,0 +1,25 @@
+section {
+  border: 100px solid transparent;
+  width: 400px;
+  height: 200px;
+  background-color: #ccc;
+  margin: 20px auto;
+}
+section.box1 {
+  background: url("../imgs/Goku.png") no-repeat;
+  background-origin: border-box;
+  padding: 25px;
+  background-color: #ccc;
+}
+section.box2 {
+  background: url("../imgs/Goku.png") no-repeat;
+  background-origin: padding-box;
+  padding: 25px;
+  background-color: #ccc;
+}
+section.box3 {
+  background: url("../imgs/Goku.png") no-repeat;
+  background-origin: content-box;
+  padding: 25px;
+  background-color: #ccc;
+}
