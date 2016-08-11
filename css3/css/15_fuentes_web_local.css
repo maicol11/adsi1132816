@@ -1,0 +1,22 @@
+body {
+  background-color: #3b399d;
+}
+section.principal {
+  background-color: #e2d9ff;
+  margin: 50px auto;
+  padding: 20px;
+  width: 680px;
+}
+h1 {
+  color: #3b399d;
+  font-family: 'Conv_prueba';
+  font-size: 4em;
+  text-align: center;
+}
+p {
+  font-family: 'Conv_titulo';
+  font-size: 3em;
+  color: #3b399d;
+  line-height: 1em;
+  text-align: justify;
+}
