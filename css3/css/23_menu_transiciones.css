@@ -1,0 +1,47 @@
+body {
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  font: 16px Tahoma;
+}
+nav {
+  margin: 20px auto;
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px;
+}
+nav li {
+  background-color: #ccc;
+  color: #fff;
+  height: 20px;
+  width: 100px;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+nav li.home:hover {
+  background-color: rgba(0,0,0,0.5);
+  color: #f00;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 2s;
+}
+nav li.about:hover {
+  color: #f00;
+  background-color: rgba(0,0,0,0.5);
+  transition: all 5s;
+}
+nav li.services:hover {
+  color: #f00;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-transform: rotateY(200deg);
+  transform: rotateY(200deg);
+  transition: all 2s;
+}
+nav li.contact:hover {
+  color: #f00;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  transition: all 2s;
+}
