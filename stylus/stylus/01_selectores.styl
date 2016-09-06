@@ -1,0 +1,23 @@
+/*Identar*/
+body
+	background-color #0F076E
+	color white
+/*Aplicar propiedades a diferentes selectores*/
+h1, p 
+	text-transform uppercase
+	font-family Arial
+/*Otra forma*/
+h1
+p 
+	text-transform capitalize
+	font-family Arial
+
+/*Referencia al elemento padre*/
+
+h1
+p 
+	background-color rgba(0,0,0, 0.4)
+	padding 20px
+	&:hover
+		background-color rgba(0,0,0, 0.8)
+	

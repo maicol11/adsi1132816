@@ -1,0 +1,77 @@
+section {
+  margin: 20px auto;
+  width: 800px;
+}
+section div:nth-child(1) {
+  background-color: #0a0a00;
+  height: 20px;
+}
+section div:nth-child(1):hover {
+  background-color: #140a00;
+}
+section div:nth-child(2) {
+  background-color: #141400;
+  height: 40px;
+}
+section div:nth-child(2):hover {
+  background-color: #281400;
+}
+section div:nth-child(3) {
+  background-color: #1e1e00;
+  height: 60px;
+}
+section div:nth-child(3):hover {
+  background-color: #3c1e00;
+}
+section div:nth-child(4) {
+  background-color: #282800;
+  height: 80px;
+}
+section div:nth-child(4):hover {
+  background-color: #502800;
+}
+section div:nth-child(5) {
+  background-color: #323200;
+  height: 100px;
+}
+section div:nth-child(5):hover {
+  background-color: #643200;
+}
+section div:nth-child(6) {
+  background-color: #3c3c00;
+  height: 120px;
+}
+section div:nth-child(6):hover {
+  background-color: #783c00;
+}
+section div:nth-child(7) {
+  background-color: #464600;
+  height: 140px;
+}
+section div:nth-child(7):hover {
+  background-color: #8c4600;
+}
+section div:nth-child(8) {
+  background-color: #505000;
+  height: 160px;
+}
+section div:nth-child(8):hover {
+  background-color: #a05000;
+}
+section div:nth-child(9) {
+  background-color: #5a5a00;
+  height: 180px;
+}
+section div:nth-child(9):hover {
+  background-color: #b45a00;
+}
+section div:nth-child(10) {
+  background-color: #646400;
+  height: 200px;
+}
+section div:nth-child(10):hover {
+  background-color: #c86400;
+}
+section div {
+  transition: all 0.5s ease-in;
+}
