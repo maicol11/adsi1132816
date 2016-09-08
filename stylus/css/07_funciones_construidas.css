@@ -1,0 +1,23 @@
+section {
+  height: 100px;
+  margin: 10px auto;
+  width: 251px;
+}
+.cajilla1 {
+  background-color: #b5e3da;
+}
+.cajilla2 {
+  background-color: #6ac8b5;
+}
+.cajilla3 {
+  background-color: #379582;
+}
+.cajilla4 {
+  background-color: #7f2f3f;
+}
+.cajilla5 {
+  background-color: #d08090;
+}
+.cajilla6 {
+  background-color: #2b8371;
+}
