@@ -96,6 +96,12 @@ fieldset.catorce input:disabled {
   border: 2px solid #acc62b;
   color: #70811a;
 }
+<<<<<<< HEAD
+=======
+fieldset.quince input:checked {
+  background-color: #6ef503;
+}
+>>>>>>> 0c219743b92bdceb2ee2f223fec6d267138c0acc
 fieldset.dieciseis :not(p) {
   background-color: #6ef503;
   border: 2px solid #acc62b;
@@ -105,6 +111,7 @@ fieldset.dieciseis :not(p) {
   background-color: #000;
   color: #acc62b;
 }
+<<<<<<< HEAD
 input[type=checkbox] {
   -webkit-appearance: none;
   background-color: #f00;
@@ -113,3 +120,5 @@ input[type=checkbox] {
 input:checked {
   border: 2px solid #acc62b;
 }
+=======
+>>>>>>> 0c219743b92bdceb2ee2f223fec6d267138c0acc
