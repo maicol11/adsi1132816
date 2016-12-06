@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ciclo Do/While</title>
+	<style>
+		div {
+			height: 40px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Ciclo Do/While</h1>
+	
+
+	<section id="sec">
+		
+	</section>
+
+	<script>
+		var i   = 0;
+		var sec = document.getElementById('sec');
+		var red = 250;
+		var green = 0;
+
+		do {
+			sec.innerHTML += "<div style='background-color: rgb("+red+",0,"+green+")'></div>";
+			red -= 25;
+			green += 25;
+			i++;
+		}
+		while( i <= 10);
+
+
+	</script>
+</body>
+</html>

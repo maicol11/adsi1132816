@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<title>Ejemplo Con funciones JS</title>
+<style>
+	body{
+	background:teal;
+	font:16px Arial;
+	}
+	nav{/border:1px solid red;
+	width:1100px;
+	margin:150px auto;
+	}
+	nav ul.products{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+	}
+	nav ul.products li{
+	border:4px solid #005050;
+	border-radius:10px;
+	background-color: #fff;
+	display: inline-block;
+	height: 300px;
+	margin-right:50px;
+	vertical-align: top;
+	padding: 10px;
+	width: 300px;
+	overflow:hidden;
+	}
+	nav ul.products li:last-child{
+	margin-right:0px;
+	}
+	nav ul.products li div figure.img{
+	height: 200px;
+	width: 280px;
+	margin:30px auto;
+	}
+	nav ul.products li div figure.img1{
+	background: url(imgs/alex.png)no-repeat center center;
+	background-size: 100%;
+	}
+	nav ul.products li div figure.img2{
+	background: url(imgs/creeper.jpg)no-repeat center center;
+	background-size: 100%;
+	}
+	nav ul.products li div figure.img3{
+	background: url(imgs/zombie.png)no-repeat center center;
+	background-size: 100%;
+	}
+	nav ul.products li div button{
+	background-color: teal;
+	border:none;
+	border-radius:100px;
+	color:#fff;
+	display:block;
+	padding:10px;
+	margin:-20px auto 0px auto;
+	width: 140px;
+	-webkit-transition:0.4s all ease-in;
+	}
+	nav ul.products li div button:hover{
+	cursor:pointer;
+	-webkit-transform: scale(1.1);
+	background-color: teal;
+	}
+	.movedown{
+	-webkit-animation: 0.5s animMoveDown 1 forwards;
+	}
+	@-webkit-keyframes animMoveDown {
+	0%{
+	-webkit-transform: translateY(0px);
+	}
+	100%{
+	-webkit-transform: translateY(370px);
+	}
+	}
+
+	.moveup{
+	-webkit-animation: 0.5s animMoveUp 1 forwards;
+	}
+	@-webkit-keyframes animMoveUp {
+	0%{
+	-webkit-transform: translateY(370px);
+	}
+	100%{
+	-webkit-transform: translateY(0px);
+	}
+	}
+	.hide {
+	display:none;
+	}
+	section.block{
+	position:relative;
+	top:-320px;
+	}
+	div.info{
+	background: -webkit-linear-gradient(#000, #bbb);
+	background: -o-linear-gradient(#000, #bbb);
+	background: linear-gradient(#000, #bbb);
+	height:280px;
+	color:white;
+	border-radius:10px;
+	padding:10px;
+	position:relative;
+	top:-50px;
+	}
+	div.info h2 {
+	margin:0px;
+	color:#fff;
+	}
+	div.info p{
+	text-align:justify;
+	line-height:22px;
+	}
+	div.info span{
+	background-color:#f00;
+	border-radius:20px;
+	color:#fff;
+	height:20px;
+	text-align: center;
+	line-height:22px;
+	display:block;
+	font-size:1.4em;
+	width:20px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	}
+	div.info span:hover{
+	cursor:pointer;
+	}
+</style>
+</head>
+<body>
+	<nav>
+	<ul class="products">
+	<li id="pr1">
+	<section class="block">
+	<div class="info">
+	<h2>Connor</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error inventore alias quam 	doloribus repudiandae expedita dolorum, animi eos nam ipsam, voluptatem ex quia vero numquam, 	aut excepturi veritatis in molestiae.</p>
+	<span id="close1">&times;</span>
+	</div>
+	<div class="state">
+	<figure class="img img1"></figure>
+	<button id="btn1">Ver +</button>
+	</div>
+	</section>
+	</li>
+	<li id="pr2">
+	<section class="block">
+	<div class="info">
+	<h2>Ezio</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error inventore alias quam 	doloribus repudiandae expedita dolorum, animi eos nam ipsam, voluptatem ex quia vero numquam, 	aut excepturi veritatis in molestiae.</p>
+	<span id="close2">&times;</span>
+	</div>
+	<div class="state">
+	<figure class="img img2"></figure>
+	<button id="btn2">Ver +</button>
+	</div>
+	</section>
+	</li>
+	<li id="pr3">
+	<section class="block">
+	<div class="info">
+	<h2>Shay</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error inventore alias quam 	doloribus repudiandae expedita dolorum, animi eos nam ipsam, voluptatem ex quia vero numquam, 	aut excepturi veritatis in molestiae.</p>
+	<span id="close3">&times;</span>
+	</div>
+	<div class="state">
+	<figure class="img img3"></figure>
+	<button id="btn3">Ver +</button>
+	</div>
+	</section>
+	</li>
+	</ul>
+	</nav>
+	
+	<script>
+	var blocks = document.getElementsByClassName('block');
+	var btn1 = document.getElementById('btn1');
+	var btn2 = document.getElementById('btn2');
+	var btn3 = document.getElementById('btn3');
+	
+	var close1 = document.getElementById('close1');
+	var close2 = document.getElementById('close2');
+	var close3 = document.getElementById('close3');
+	
+	function toogleFx(inx, dir){
+	if (dir == 'down') {
+	blocks[inx].classList.remove('moveup');
+	blocks[inx].classList.add('movedown');
+	} else {
+	blocks[inx].classList.remove('movedown');
+	blocks[inx].classList.add('moveup');
+	}
+	}
+	
+	btn1.onclick = function(){
+	toogleFx(0, 'down');
+	}
+	btn2.onclick = function(){
+	toogleFx(1, 'down');
+	}
+	btn3.onclick = function(){
+	toogleFx(2, 'down');
+	}
+	close1.onclick = function(){
+	toogleFx(0, 'up');
+	}
+	close2.onclick = function(){
+	toogleFx(1, 'up');
+	}
+	close3.onclick = function(){
+	toogleFx(2, 'up');
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Condicional If</title>
+</head>
+<body>
+	<h1>Condicional If</h1>
+	<hr>
+	<h2 id="saludo">Bienvenido, que disfrute colombia</h2>
+
+	<script>
+
+		var saludo = document.getElementById('saludo');
+		var resp   = prompt('Cual es su nacionalidad ?')
+
+		if(resp == 'Colombibiano' || resp == 'Colombiana') {
+			saludo.innerHTML = "Bienvenido a su hogar";
+		}
+
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,20 @@
+main {
+	margin: 50px auto;
+	padding: 20px;
+	width: 960px;
+}
+
+main section {
+	background: url(../imgs/img.jpg) no-repeat center center;
+	background-size: 180%;
+	background-size: ;
+	border: 2px solid #356c7f;
+	display: inline-block;
+	height: 250px;
+	margin: 4px;
+	width: 300px;
+	transition: all 2s ease-in;
+}
+main section:hover {
+	background-size: 120%;
+}

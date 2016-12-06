@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Condicional Si no</title>
+	<style>
+	body {
+		color: #4ACDBE;
+	}
+
+	</style>
+</head>
+<body id="color">
+	<h1>Condicional Si no</h1>
+	<p id="respuesta1"></p>
+	<p id="respuesta2"></p>
+	<h2 id="saludo"></h2>
+	<script>
+		var respuesta1 = document.getElementById('respuesta1')
+		var respuesta2 = document.getElementById('respuesta2')
+		var Once = prompt('Cuantas Estrellas tiene el Once Caldas?')		
+		if(Once == 4) {
+			respuesta1.innerHTML = 'Respuesta Correcta, el Once Caldas tiene 4 estrellas'
+		} else {
+			respuesta1.innerHTML = 'Respuesta Incorrecta, El Once Caldas tiene 4 estrellas'
+		}
+		var Juegos = prompt('Que juego rompio record en ventas, GTAV o Sleeping Dogs')
+		if (Juegos == "GTAV" || Juegos == "GTA5") {
+			respuesta2.innerHTML = 'Respuesta Correcta, GTAV rompio record en ventas'
+		} else {
+			respuesta2.innerHTML = 'Respuesta Incorrecta, Sleeping Dogs no rompio record en ventas'
+		}
+
+		var saludo = document.getElementById('saludo')
+		var color = document.getElementById('color')
+
+		var resp = prompt('Cuál es su color favorito en ingles ?')
+		if(resp == 'white' || resp == 'black') {
+			saludo.innerText = 'El color '+resp+' Tambien es mi favorito :)'
+			color.style.backgroundColor = resp
+		} else {
+			saludo.innerText = 'El color '+resp+' No es mi color favorito :('
+			color.style.backgroundColor = resp;
+		}
+	</script>
+</body>
+</html>

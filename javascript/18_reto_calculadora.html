@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Calculadora</title>
+	<style>
+		body {
+			background-color: #532222;
+		}
+		section {
+			margin: 0px auto;
+			margin-top: 100px;
+			border: 1px solid rgba(250,250,250,0.6);
+			box-shadow: 0px 10px 35px 0px rgba(250,250,250,0.5);
+			width: 400px;
+			height: 200px;
+			color: white;
+		}
+		h5 {
+			text-align: center;
+		}
+		input {
+			width: 210px;
+			margin-left: 98px;
+			position: relative;
+			bottom: 12px;
+			color: #1FAB93;
+			outline: none;
+		}
+		div {
+			width: 210px;
+			margin: 0px auto;
+		}
+		button {
+			outline: none;
+			vertical-align: top;
+			display: inline-block;
+			width: 50px;
+			border-radius: 10px;
+			color: #1FAB93;
+			box-shadow: 0px 5px 30px 0px rgba(250,250,250,0.5);
+
+		}
+		button:focus {
+			border: none;
+		}
+		button:hover {
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+			transition: all 1s;
+			border: 1px solid #1FAB93;
+			color: #51F3D7;
+		}
+		#btnigual {
+			position: relative;
+			left: 160px;
+			bottom: 59.5px;
+
+		}
+		#btnclear {
+			position: relative;
+			left: 106px;
+			bottom: 80px;
+			background-color: #1FAB93;
+			border: 1px solid #1FAB93;
+			color: white;
+		}
+		#btndecimal { 
+			position: relative;
+			left: 52px;
+			bottom: 38.5px;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<section>
+		<h5>Calculadora M-M</h5>
+		<input id="display" type="text" >
+		<div>
+			<button id="btn1">1</button>
+			<button id="btn2">2</button>
+			<button id="btn3">3</button>
+			<button id="btn4">4</button>
+			<button id="btn5">5</button>
+			<button id="btn6">6</button>
+			<button id="btn7">7</button>
+			<button id="btn8">8</button>
+			<button id="btn9">9</button>
+			<button id="btn0">0</button>
+			<button id="btnsuma">+</button>
+			<button id="btnresta">-</button>
+			<button id="btnmulti">*</button>
+			<button id="btndivi">/</button>
+			<button id="btn10">^</button>
+			<button id="btnigual">=</button>
+			<button id="btnclear">C</button>
+			<button id="btndecimal">.</button>		
+		</div>
+	
+	</section>
+
+
+
+	<script>
+		var display   = document.getElementById('display');
+		var btn1      = document.getElementById('btn1');
+		var btn2      = document.getElementById('btn2');
+		var btn3      = document.getElementById('btn3');
+		var btn4      = document.getElementById('btn4');
+		var btn5      = document.getElementById('btn5');
+		var btn6      = document.getElementById('btn6');
+		var btn7      = document.getElementById('btn7');
+		var btn8      = document.getElementById('btn8');
+		var btn9      = document.getElementById('btn9');
+		var btn0      = document.getElementById('btn0');
+		var btnsuma   = document.getElementById('btnsuma');
+		var btnresta  = document.getElementById('btnresta');
+		var btnmulti  = document.getElementById('btnmulti');
+		var btndivi   = document.getElementById('btndivi');
+		var btn10     = document.getElementById('btn10');
+		var btnclear  = document.getElementById('btnclear');
+		var btnigual  = document.getElementById('btnigual');
+		var btndecimal = document.getElementById('btndecimal');
+
+
+		btn1.onclick = function() {
+			display.value += 1;
+		}
+		btn2.onclick = function() {
+			display.value += 2; 
+		}
+		btn3.onclick = function() {
+			display.value += 3; 
+		}
+		btn4.onclick = function() {
+			display.value += 4; 
+		}
+		btn5.onclick = function() {
+			display.value += 5; 
+		}
+		btn6.onclick = function() {
+			display.value += 6; 
+		}
+		btn7.onclick = function() {
+			display.value += 7; 
+		}
+		btn8.onclick = function() {
+			display.value += 8; 
+		}
+		btn9.onclick = function() {
+			display.value += 9; 
+		}
+		btnclear.onclick = function() {
+			display.value = ''; 
+		}
+		btn0.onclick = function() {
+			display.value += 0; 
+		}
+		btnsuma.onclick = function() {
+			display.value  += '+'; 
+		}
+		btnresta.onclick = function() {
+			display.value  += '-'; 
+		}
+		btnmulti.onclick = function() {
+			display.value  += '*'; 
+		}
+		btndivi.onclick = function() {
+			display.value  += '/'; 
+		}
+		btn10.onclick = function() {
+			display.value += '^'; 
+		}
+		btndecimal.onclick = function() {
+			display.value += '.'; 
+		}
+		btnigual.onclick = function() {
+			display.value=eval(display.value);
+		}
+	</script>
+
+</body>
+</html>

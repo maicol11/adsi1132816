@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Break Continue JS</title>
+</head>
+<body>
+	<h1>Break Continue JS</h1>
+	<hr>
+	<ul id="salida"></ul>
+
+	<script>
+		var salida = document.getElementById('salida');
+
+		for(var i = 1; i <=10; i++) {
+			if (i ==3) continue;
+			if (i == 6) break;
+			salida.innerHTML += "<li>"+i+"</li>";
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores Aritméticos</title>
+	<style>
+	table {
+		border-collapse: collapse;
+		color: #777;
+		font: 16px Arial;
+		padding: 4px;
+		margin: 100px auto;
+		width: 800px;
+	}
+	table td, table th {
+		border: 1px dotted #ccc;
+		padding: 8px;
+	}
+	table th {
+		background-color: #999;
+		color: #fff;
+	}
+	table tr:nth-child(even) {
+		background-color: #ddd;
+	}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="4">Operadores Comparacion</th>
+			</tr>
+			<tr>
+				<th>Operador</th>
+				<th>Descripcion</th>
+				<th>Comparacion</th>
+				<th>Resultado</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>==</td>
+				<td>Es igual a</td>
+				<td>x==8</td>
+				<td id="rprimero"></td>
+			</tr>
+			<tr>
+				<td>===</td>
+				<td>Es exactamente igual a (valor y tipo)</td>
+				<td>x===5</td>
+				<td id="rdos"></td>
+			</tr>
+			<tr>
+				<td>!=</td>
+				<td>No es igual</td>
+				<td>x!=8</td>
+				<td id="rtres"></td>
+			</tr>
+			<tr>
+				<td>!==</td>
+				<td>No es igual (Valor o tipo)</td>
+				<td>x!==5</td>
+				<td id="rcuatro"></td>
+			</tr>
+			<tr>
+				<td>></td>
+				<td>Es mayor que </td>
+				<td>x>8</td>
+				<td id="rcinco"></td>
+			</tr>
+			<tr>
+				<td><</td>
+				<td>Es menor que</td>
+				<td>x<8 </td>
+				<td id="rseis"></td>
+			</tr>
+			<tr>
+				<td>>= </td>
+				<td>Es mayor o igual que</td>
+				<td>x>=8 </td>
+				<td id="rsiete"></td>
+			</tr>
+			<tr>
+				<td> <=  </td>
+				<td>Es menor o igual que</td>
+				<td>x<=8 </td>
+				<td id="rocho"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script>
+		//V A R I A B L E S
+		var x 	  = 5;
+		var rprimero = document.getElementById('rprimero');
+		var rdos = document.getElementById('rdos');
+		var rtres = document.getElementById('rtres');
+		var rcuatro = document.getElementById('rcuatro');
+		var rmodulo = document.getElementById('rmodulo');
+		var rcinco = document.getElementById('rcinco');
+		var rseis = document.getElementById('rseis');
+		var rsiete = document.getElementById('rsiete');
+		var rocho = document.getElementById('rocho');	
+
+		// R E S P U E S T A S
+		rprimero.innerHTML 		   = (x==8);
+		rdos.innerHTML 		       = (x===5);
+		rtres.innerHTML	 	       = (x!=8);
+		rcuatro.innerHTML 	       = (x!==5);
+		rcinco.innerHTML           = (x>8);
+		rseis.innerHTML   		   = (x<8);
+		rsiete.innerHTML 		   = (x>=8);
+		rocho.innerHTML            = (x<=8); 
+
+	</script>
+</body>
+</html>

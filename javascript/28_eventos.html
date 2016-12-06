@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos JS</title>
+	<style>
+		figure#game{
+			height: 200px;
+			width: 400px;
+			margin: 50px auto;
+			-webkit-transition: all 1s ease-in;
+		}
+		figure#game.game1 {
+			background: url(imgs/uncharted.jpg) no-repeat;
+		}
+		figure#game.game2 {
+			background: url(imgs/witcher.png) no-repeat;
+		}
+		figure#game.game3 {
+			background: url(imgs/fn.jpg) no-repeat;
+		}
+		figure#game.out-anim {
+			-webkit-animation: 0.5s animOut ease-in 1;
+		}
+		@-webkit-keyframes animOut {
+			0% { -webkit-transform: translateX(0px); }
+			100% { -webkit-transform: translateX(1000px); }
+
+		}
+		figure#game.in-anim {
+			-webkit-animation: 0.5s animIn ease-in 1;
+		}
+		@-webkit-keyframes animIn{
+			0% { -webkit-transform: translateX(-1000px); }
+			100% { -webkit-transform: translateX(0px); }
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<h1>Eventos JS</h1>
+	<hr>
+
+	<select id="sec">
+		<option value="1">IMG1</option>
+		<option value="2">IMG2</option>
+		<option value="3">IMG3</option>
+	</select>
+	<figure id="game"></figure>
+
+	<script>
+		var sec = document.getElementById('sec');
+		var game = document.getElementById('game');
+		game.classList.add('game1');
+
+		sec.onchange = function() {
+			//game.className = ''; // Eliminar todas las clases
+			game.classList.remove('in-anim');
+			game.classList.add('out-anim');
+
+			if(this.value == 1) 
+				setTimeout(function() {
+					game.classList.remove('game2', 'game3', 'out-anim');
+					game.classList.add('in-anim', 'game1');
+				},500);
+
+			if(this.value == 2)
+				setTimeout(function() {
+					game.classList.remove('game1', 'game3', 'out-anim');
+					game.classList.add('in-anim', 'game2');
+				},500);
+
+			if(this.value == 3) 
+				setTimeout(function() {
+					game.classList.remove('game1', 'game2', 'out-anim');
+					game.classList.add('in-anim', 'game3');
+				},500);
+
+		}
+
+
+	</script>
+</body>
+</html>

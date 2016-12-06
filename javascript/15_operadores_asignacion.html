@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores Aritméticos</title>
+	<style>
+	table {
+		border-collapse: collapse;
+		color: #777;
+		font: 16px Arial;
+		padding: 4px;
+		margin: 100px auto;
+		width: 800px;
+	}
+	table td, table th {
+		border: 1px dotted #ccc;
+		padding: 8px;
+	}
+	table th {
+		background-color: #999;
+		color: #fff;
+	}
+	table tr:nth-child(even) {
+		background-color: #ddd;
+	}
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="4">Operadores Asignacion</th>
+			</tr>
+			<tr>
+				<th>Operador</th>
+				<th>Ejemplo</th>
+				<th>Igual</th>
+				<th>Resultado</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>=</td>
+				<td>x=y</td>
+				<td>x=5</td>
+				<td id="rigual"></td>
+			</tr>
+			<tr>
+				<td>+=</td>
+				<td>x+=y</td>
+				<td>x=x+y</td>
+				<td id="rdos"></td>
+			</tr>
+			<tr>
+				<td>-=</td>
+				<td>x-=y</td>
+				<td>x=x-y</td>
+				<td id="rtres"></td>
+			</tr>
+			<tr>
+				<td>*=</td>
+				<td>x*=y</td>
+				<td>x=x*y</td>
+				<td id="rcuatro"></td>
+			</tr>
+			<tr>
+				<td>/=</td>
+				<td>x/=y</td>
+				<td>x=x/y</td>
+				<td id="rcinco"></td>
+			</tr>
+			<tr>
+				<td>%=</td>
+				<td>x%=y</td>
+				<td>x=x%y</td>
+				<td id="rseis"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<script>
+		//V A R I A B L E S
+		var y 	  = 5;
+		var x 	  = 10;
+		var rigual = document.getElementById('rigual');
+		var rdos = document.getElementById('rdos');
+		var rtres = document.getElementById('rtres');
+		var rcuatro = document.getElementById('rcuatro');
+		var rmodulo = document.getElementById('rmodulo');
+		var rcinco = document.getElementById('rcinco');
+		var rseis = document.getElementById('rseis');
+		var rdecrementopre = document.getElementById('rdecrementopre');
+		var rdecrementopos = document.getElementById('rdecrementopos');	
+
+		// R E S P U E S T A S
+		rigual.innerHTML 		   = x = y;
+		var y 	  = 5;
+		var x 	  = 10;
+		rdos.innerHTML 		       = x+=y;
+		var y 	  = 5;
+		var x 	  = 10;
+		rtres.innerHTML	 	       = x-=y;
+		var y 	  = 5;
+		var x 	  = 10;
+		rcuatro.innerHTML 	       = x*=y;
+		var y 	  = 5;
+		var x 	  = 10;
+		rcinco.innerHTML           = x/=y;
+		var y 	  = 5;
+		var x 	  = 10;
+		rseis.innerHTML   		   = x%=y;
+	</script>
+</body>
+</html>
